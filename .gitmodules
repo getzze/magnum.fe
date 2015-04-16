@@ -1,0 +1,3 @@
+[submodule "cbc.block"]
+	path = cbc.block
+	url = https://bitbucket.org/fenics-apps/cbc.block.git
