@@ -42,6 +42,9 @@ RUN cd /tmp && \
 
 COPY virtual/files/bempp_setup.cfg /tmp/bempp/
 
+# Use special boost archive
+COPY virtual/files/boost_1_49.tar.gz /tmp/bempp/installer/files/boost_1_49.tar.gz
+
 RUN cd /tmp/bempp && \
     python bempp_setup.py -b bempp_setup.cfg && \
     python bempp_setup.py -c bempp_setup.cfg && \
